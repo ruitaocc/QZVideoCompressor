@@ -8,15 +8,8 @@ This project have three main components: 1,QZAssetPicker; 2,QZVideoPreviewer; 3,
 
 
 ## Screens
-![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/IMG_0285.png "QZVideoCompressor screen")
-![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/IMG_0286.png "QZVideoCompressor screen")
-![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/IMG_0287.png "QZVideoCompressor screen")
-![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/IMG_0288.png "QZVideoCompressor screen")
-![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/IMG_0289.png "QZVideoCompressor screen")
-![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/IMG_0290.png "QZVideoCompressor screen")      
-![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/IMG_0291.png "QZVideoCompressor screen")
-![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/IMG_0292.png "QZVideoCompressor screen")
-![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/IMG_0293.png "QZVideoCompressor screen")
+![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/qzvideocompressor1.png "QZVideoCompressor screen")
+![QZVideoCompressor screen](https://storage.googleapis.com/ruitaocc-upload/qzvideocompressor2.png "QZVideoCompressor screen")
  
 
 
