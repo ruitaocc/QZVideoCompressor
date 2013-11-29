@@ -30,10 +30,11 @@ This project have three main components: 1,QZAssetPicker; 2,QZVideoPreviewer; 3,
 1. Drop `QZVideoCompressor` files into your project.
 2. Add `AssetsLibrary.framework`, `MediaPlayer.framework`, `AudioToolbox.framework`, `AVFoundation.framework`, to your project.
 3. Add below code to use it in a class.
+
 ``` objective-c
-#import "QZAssetsPickerController.h"
-#import "QZLocalVideoCompressEngine.h"
-#import "QZVideoPreviewController.h"`
+    #import "QZAssetsPickerController.h"
+	#import "QZLocalVideoCompressEngine.h"
+	#import "QZVideoPreviewController.h"
 ```
 
 ## Example Usage
