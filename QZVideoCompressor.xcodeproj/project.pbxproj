@@ -22,6 +22,22 @@
 		9E6FE6CB184879E90034AB17 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6FE6AA184879E90034AB17 /* UIKit.framework */; };
 		9E6FE6D3184879E90034AB17 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E6FE6D1184879E90034AB17 /* InfoPlist.strings */; };
 		9E6FE6D5184879E90034AB17 /* QZVideoCompressorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE6D4184879E90034AB17 /* QZVideoCompressorTests.m */; };
+		9E6FE6E918487A270034AB17 /* ResizibleBubble.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE6E018487A270034AB17 /* ResizibleBubble.m */; };
+		9E6FE6EA18487A270034AB17 /* SliderLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE6E218487A270034AB17 /* SliderLeft.m */; };
+		9E6FE6EB18487A270034AB17 /* SliderRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE6E418487A270034AB17 /* SliderRight.m */; };
+		9E6FE6EC18487A270034AB17 /* SliderCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE6E618487A270034AB17 /* SliderCursor.m */; };
+		9E6FE6ED18487A270034AB17 /* QZVideoRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE6E818487A270034AB17 /* QZVideoRangeSlider.m */; };
+		9E6FE6F318487A670034AB17 /* QZVideoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE6F018487A670034AB17 /* QZVideoPreviewController.m */; };
+		9E6FE6F418487A670034AB17 /* QZVideoProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE6F218487A670034AB17 /* QZVideoProgressBar.m */; };
+		9E6FE6F918487AA80034AB17 /* QZLocalVideoCompressEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE6F818487AA80034AB17 /* QZLocalVideoCompressEngine.m */; };
+		9E6FE6FC18487ABC0034AB17 /* QZAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE6FB18487ABC0034AB17 /* QZAssetsPickerController.m */; };
+		9E6FE6FF18487B1D0034AB17 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6FE6FE18487B1D0034AB17 /* AudioToolbox.framework */; };
+		9E6FE70118487B270034AB17 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6FE70018487B270034AB17 /* MediaPlayer.framework */; };
+		9E6FE70318487B2E0034AB17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6FE70218487B2E0034AB17 /* AVFoundation.framework */; };
+		9E6FE70518487B350034AB17 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6FE70418487B350034AB17 /* AssetsLibrary.framework */; };
+		9E6FE70818487BD50034AB17 /* GLobalDefineMicro.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6FE70718487BD50034AB17 /* GLobalDefineMicro.m */; };
+		9E6FE70C18487D2F0034AB17 /* btn_microvideo_pause_ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6FE70A18487D2F0034AB17 /* btn_microvideo_pause_ios7@2x.png */; };
+		9E6FE70D18487D2F0034AB17 /* btn_microvideo_play_ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6FE70B18487D2F0034AB17 /* btn_microvideo_play_ios7@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +71,32 @@
 		9E6FE6D0184879E90034AB17 /* QZVideoCompressorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QZVideoCompressorTests-Info.plist"; sourceTree = "<group>"; };
 		9E6FE6D2184879E90034AB17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E6FE6D4184879E90034AB17 /* QZVideoCompressorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QZVideoCompressorTests.m; sourceTree = "<group>"; };
+		9E6FE6DF18487A270034AB17 /* ResizibleBubble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizibleBubble.h; sourceTree = "<group>"; };
+		9E6FE6E018487A270034AB17 /* ResizibleBubble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizibleBubble.m; sourceTree = "<group>"; };
+		9E6FE6E118487A270034AB17 /* SliderLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderLeft.h; sourceTree = "<group>"; };
+		9E6FE6E218487A270034AB17 /* SliderLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderLeft.m; sourceTree = "<group>"; };
+		9E6FE6E318487A270034AB17 /* SliderRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderRight.h; sourceTree = "<group>"; };
+		9E6FE6E418487A270034AB17 /* SliderRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderRight.m; sourceTree = "<group>"; };
+		9E6FE6E518487A270034AB17 /* SliderCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderCursor.h; sourceTree = "<group>"; };
+		9E6FE6E618487A270034AB17 /* SliderCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderCursor.m; sourceTree = "<group>"; };
+		9E6FE6E718487A270034AB17 /* QZVideoRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZVideoRangeSlider.h; sourceTree = "<group>"; };
+		9E6FE6E818487A270034AB17 /* QZVideoRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZVideoRangeSlider.m; sourceTree = "<group>"; };
+		9E6FE6EF18487A670034AB17 /* QZVideoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZVideoPreviewController.h; sourceTree = "<group>"; };
+		9E6FE6F018487A670034AB17 /* QZVideoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZVideoPreviewController.m; sourceTree = "<group>"; };
+		9E6FE6F118487A670034AB17 /* QZVideoProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZVideoProgressBar.h; sourceTree = "<group>"; };
+		9E6FE6F218487A670034AB17 /* QZVideoProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZVideoProgressBar.m; sourceTree = "<group>"; };
+		9E6FE6F718487AA80034AB17 /* QZLocalVideoCompressEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZLocalVideoCompressEngine.h; sourceTree = "<group>"; };
+		9E6FE6F818487AA80034AB17 /* QZLocalVideoCompressEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZLocalVideoCompressEngine.m; sourceTree = "<group>"; };
+		9E6FE6FA18487ABC0034AB17 /* QZAssetsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAssetsPickerController.h; sourceTree = "<group>"; };
+		9E6FE6FB18487ABC0034AB17 /* QZAssetsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAssetsPickerController.m; sourceTree = "<group>"; };
+		9E6FE6FE18487B1D0034AB17 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9E6FE70018487B270034AB17 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9E6FE70218487B2E0034AB17 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9E6FE70418487B350034AB17 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		9E6FE70618487BD50034AB17 /* GLobalDefineMicro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLobalDefineMicro.h; sourceTree = "<group>"; };
+		9E6FE70718487BD50034AB17 /* GLobalDefineMicro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLobalDefineMicro.m; sourceTree = "<group>"; };
+		9E6FE70A18487D2F0034AB17 /* btn_microvideo_pause_ios7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_microvideo_pause_ios7@2x.png"; sourceTree = "<group>"; };
+		9E6FE70B18487D2F0034AB17 /* btn_microvideo_play_ios7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_microvideo_play_ios7@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6FE70518487B350034AB17 /* AssetsLibrary.framework in Frameworks */,
+				9E6FE70318487B2E0034AB17 /* AVFoundation.framework in Frameworks */,
+				9E6FE70118487B270034AB17 /* MediaPlayer.framework in Frameworks */,
+				9E6FE6FF18487B1D0034AB17 /* AudioToolbox.framework in Frameworks */,
 				9E6FE6A9184879E90034AB17 /* CoreGraphics.framework in Frameworks */,
 				9E6FE6AB184879E90034AB17 /* UIKit.framework in Frameworks */,
 				9E6FE6A7184879E90034AB17 /* Foundation.framework in Frameworks */,
@@ -103,6 +149,10 @@
 		9E6FE6A5184879E90034AB17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E6FE70418487B350034AB17 /* AssetsLibrary.framework */,
+				9E6FE70218487B2E0034AB17 /* AVFoundation.framework */,
+				9E6FE70018487B270034AB17 /* MediaPlayer.framework */,
+				9E6FE6FE18487B1D0034AB17 /* AudioToolbox.framework */,
 				9E6FE6A6184879E90034AB17 /* Foundation.framework */,
 				9E6FE6A8184879E90034AB17 /* CoreGraphics.framework */,
 				9E6FE6AA184879E90034AB17 /* UIKit.framework */,
@@ -114,6 +164,7 @@
 		9E6FE6AC184879E90034AB17 /* QZVideoCompressor */ = {
 			isa = PBXGroup;
 			children = (
+				9E6FE6FD18487AC90034AB17 /* QZVideoCompressor */,
 				9E6FE6B5184879E90034AB17 /* QZAppDelegate.h */,
 				9E6FE6B6184879E90034AB17 /* QZAppDelegate.m */,
 				9E6FE6B8184879E90034AB17 /* Main_iPhone.storyboard */,
@@ -153,6 +204,75 @@
 				9E6FE6D1184879E90034AB17 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E6FE6DE18487A0D0034AB17 /* QZRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				9E6FE6DF18487A270034AB17 /* ResizibleBubble.h */,
+				9E6FE6E018487A270034AB17 /* ResizibleBubble.m */,
+				9E6FE6E118487A270034AB17 /* SliderLeft.h */,
+				9E6FE6E218487A270034AB17 /* SliderLeft.m */,
+				9E6FE6E318487A270034AB17 /* SliderRight.h */,
+				9E6FE6E418487A270034AB17 /* SliderRight.m */,
+				9E6FE6E518487A270034AB17 /* SliderCursor.h */,
+				9E6FE6E618487A270034AB17 /* SliderCursor.m */,
+				9E6FE6E718487A270034AB17 /* QZVideoRangeSlider.h */,
+				9E6FE6E818487A270034AB17 /* QZVideoRangeSlider.m */,
+			);
+			name = QZRangeSlider;
+			sourceTree = "<group>";
+		};
+		9E6FE6EE18487A4D0034AB17 /* QZVideoPreviewController */ = {
+			isa = PBXGroup;
+			children = (
+				9E6FE6DE18487A0D0034AB17 /* QZRangeSlider */,
+				9E6FE6EF18487A670034AB17 /* QZVideoPreviewController.h */,
+				9E6FE6F018487A670034AB17 /* QZVideoPreviewController.m */,
+				9E6FE6F118487A670034AB17 /* QZVideoProgressBar.h */,
+				9E6FE6F218487A670034AB17 /* QZVideoProgressBar.m */,
+			);
+			name = QZVideoPreviewController;
+			sourceTree = "<group>";
+		};
+		9E6FE6F518487A710034AB17 /* QZVideoCompressEngine */ = {
+			isa = PBXGroup;
+			children = (
+				9E6FE6F718487AA80034AB17 /* QZLocalVideoCompressEngine.h */,
+				9E6FE6F818487AA80034AB17 /* QZLocalVideoCompressEngine.m */,
+			);
+			name = QZVideoCompressEngine;
+			sourceTree = "<group>";
+		};
+		9E6FE6F618487A8D0034AB17 /* QZAssetsPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				9E6FE6FA18487ABC0034AB17 /* QZAssetsPickerController.h */,
+				9E6FE6FB18487ABC0034AB17 /* QZAssetsPickerController.m */,
+			);
+			name = QZAssetsPickerController;
+			sourceTree = "<group>";
+		};
+		9E6FE6FD18487AC90034AB17 /* QZVideoCompressor */ = {
+			isa = PBXGroup;
+			children = (
+				9E6FE70618487BD50034AB17 /* GLobalDefineMicro.h */,
+				9E6FE70718487BD50034AB17 /* GLobalDefineMicro.m */,
+				9E6FE70918487D1F0034AB17 /* resource */,
+				9E6FE6EE18487A4D0034AB17 /* QZVideoPreviewController */,
+				9E6FE6F518487A710034AB17 /* QZVideoCompressEngine */,
+				9E6FE6F618487A8D0034AB17 /* QZAssetsPickerController */,
+			);
+			name = QZVideoCompressor;
+			sourceTree = "<group>";
+		};
+		9E6FE70918487D1F0034AB17 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				9E6FE70A18487D2F0034AB17 /* btn_microvideo_pause_ios7@2x.png */,
+				9E6FE70B18487D2F0034AB17 /* btn_microvideo_play_ios7@2x.png */,
+			);
+			name = resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +353,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E6FE6BD184879E90034AB17 /* Main_iPad.storyboard in Resources */,
+				9E6FE70C18487D2F0034AB17 /* btn_microvideo_pause_ios7@2x.png in Resources */,
+				9E6FE70D18487D2F0034AB17 /* btn_microvideo_play_ios7@2x.png in Resources */,
 				9E6FE6C2184879E90034AB17 /* Images.xcassets in Resources */,
 				9E6FE6BA184879E90034AB17 /* Main_iPhone.storyboard in Resources */,
 				9E6FE6B1184879E90034AB17 /* InfoPlist.strings in Resources */,
@@ -255,7 +377,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E6FE6B3184879E90034AB17 /* main.m in Sources */,
+				9E6FE6F418487A670034AB17 /* QZVideoProgressBar.m in Sources */,
+				9E6FE6F318487A670034AB17 /* QZVideoPreviewController.m in Sources */,
+				9E6FE6ED18487A270034AB17 /* QZVideoRangeSlider.m in Sources */,
+				9E6FE6EB18487A270034AB17 /* SliderRight.m in Sources */,
+				9E6FE6F918487AA80034AB17 /* QZLocalVideoCompressEngine.m in Sources */,
+				9E6FE6E918487A270034AB17 /* ResizibleBubble.m in Sources */,
+				9E6FE6EC18487A270034AB17 /* SliderCursor.m in Sources */,
+				9E6FE6EA18487A270034AB17 /* SliderLeft.m in Sources */,
+				9E6FE6FC18487ABC0034AB17 /* QZAssetsPickerController.m in Sources */,
 				9E6FE6B7184879E90034AB17 /* QZAppDelegate.m in Sources */,
+				9E6FE70818487BD50034AB17 /* GLobalDefineMicro.m in Sources */,
 				9E6FE6C0184879E90034AB17 /* QZViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

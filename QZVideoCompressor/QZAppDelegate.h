@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QZViewController.h"
 
 @interface QZAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) QZViewController *viewController;
 @end
