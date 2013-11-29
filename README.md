@@ -58,6 +58,7 @@ vectorcai
 
 - https://github.com/ruitaocc
 - http://www.cairuitao.com
+- ruitaocc@gmail.com
 
 ## License
 QZVideoCompressor is available under the MIT license. See the LICENSE file for more info.
