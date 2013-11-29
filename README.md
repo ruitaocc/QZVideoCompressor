@@ -1,10 +1,11 @@
 # QZVideoCompressor
 ======
-This project have three main components: 1,QZAssetPicker; 2,QZVideoPreviewer; 3,QZVideoCompressor.
-1,In iOS7,the system's UIImagePicker can't filter assets flexible. By the QZAssetPicker, we can select asset from the local asset library with filter, the filter can set as allPhotos/allVideos/allAssets, and multiselect as well.
-2,The usally way to compress vedio is use AVAssetExportSession, and set its quality level. The AVAssetExportSession can only compress vedio into three quality levels (AVAssetExportPresetLowQuality/AVAssetExportPresetMediumQuality/AVAssetExportPresetHighQuality). This is not suitable for network transfer, although we can set the shouldOptimizeForNetworkUse property, it doesn't work.
-  By the QZVideoCompressor, we use AssetReader to read the original asset, and then AssetWriter to compress the vedio. With this, we can config the compress setting flexible.(AVVideoAverageBitRateKey/AVVideoWidthKey/AVVideoHeightKey/AVVideoMaxKeyFrameIntervalKey...).
-3.The QZVideoPreviewer is used to preview the video asset select by QZAssetPicker. And it support range slider, used to clip time range of the vedio. It pass a parameter CMTime timeRange to the QZVideoCompressor; then the AssetReader just process the video in timeRange.
+This project have three main components: 1,`QZAssetPicker`; 2,`QZVideoPreviewer`; 3,`QZVideoCompressor`.
+1. In iOS7,the system's UIImagePicker can't filter assets flexible.
+   - By the QZAssetPicker, we can select asset from the local asset library with filter, the filter can set as allPhotos/allVideos/allAssets, and multiselect as well.
+2. The usally way to compress vedio is use AVAssetExportSession, and set its quality level. The AVAssetExportSession can only compress vedio into three quality levels (AVAssetExportPresetLowQuality/AVAssetExportPresetMediumQuality/AVAssetExportPresetHighQuality). This is not suitable for network transfer, although we can set the shouldOptimizeForNetworkUse property, it doesn't work.
+- By the QZVideoCompressor, we use AssetReader to read the original asset, and then AssetWriter to compress the vedio. With this, we can config the compress setting flexible.(AVVideoAverageBitRateKey/AVVideoWidthKey/AVVideoHeightKey/AVVideoMaxKeyFrameIntervalKey...).
+3. The QZVideoPreviewer is used to preview the video asset select by QZAssetPicker. And it support range slider, used to clip time range of the vedio. It pass a parameter CMTime timeRange to the QZVideoCompressor; then the AssetReader just process the video in timeRange.
 
 
 ## Screens
