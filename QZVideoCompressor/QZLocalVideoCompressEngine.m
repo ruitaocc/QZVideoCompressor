@@ -198,57 +198,6 @@
 			AVAssetReaderOutput *output = [AVAssetReaderTrackOutput assetReaderTrackOutputWithTrack:videoTrack outputSettings:decompressionVideoSettings];
             [assetReader addOutput:output];
 			
-			// Get the format description of the track, to fill in attributes of the video stream that we don't want to change
-			CMFormatDescriptionRef formatDescription = NULL;
-			NSArray *formatDescriptions = [videoTrack formatDescriptions];
-			if ([formatDescriptions count] > 0)
-				formatDescription = (__bridge CMFormatDescriptionRef)[formatDescriptions objectAtIndex:0];
-			
-			// Grab track dimensions from format description
-			CGSize trackDimensions = {
-				.width = 0.0,
-				.height = 0.0,
-			};
-			if (formatDescription)
-				trackDimensions = CMVideoFormatDescriptionGetPresentationDimensions(formatDescription, false, false);
-			else
-				trackDimensions = [videoTrack naturalSize];
-            
-			// Grab clean aperture, pixel aspect ratio from format description
-			NSDictionary *compressionSettings = nil;
-			if (formatDescription)
-			{
-				NSDictionary *cleanAperture = nil;
-				NSDictionary *pixelAspectRatio = nil;
-				CFDictionaryRef cleanApertureFromCMFormatDescription = CMFormatDescriptionGetExtension(formatDescription, kCMFormatDescriptionExtension_CleanAperture);
-				if (cleanApertureFromCMFormatDescription)
-				{
-					cleanAperture = [NSDictionary dictionaryWithObjectsAndKeys:
-									 CFDictionaryGetValue(cleanApertureFromCMFormatDescription, kCMFormatDescriptionKey_CleanApertureWidth), AVVideoCleanApertureWidthKey,
-									 CFDictionaryGetValue(cleanApertureFromCMFormatDescription, kCMFormatDescriptionKey_CleanApertureHeight), AVVideoCleanApertureHeightKey,
-									 CFDictionaryGetValue(cleanApertureFromCMFormatDescription, kCMFormatDescriptionKey_CleanApertureHorizontalOffset), AVVideoCleanApertureHorizontalOffsetKey,
-									 CFDictionaryGetValue(cleanApertureFromCMFormatDescription, kCMFormatDescriptionKey_CleanApertureVerticalOffset), AVVideoCleanApertureVerticalOffsetKey,
-									 nil];
-				}
-				CFDictionaryRef pixelAspectRatioFromCMFormatDescription = CMFormatDescriptionGetExtension(formatDescription, kCMFormatDescriptionExtension_PixelAspectRatio);
-				if (pixelAspectRatioFromCMFormatDescription)
-				{
-					pixelAspectRatio = [NSDictionary dictionaryWithObjectsAndKeys:
-										CFDictionaryGetValue(pixelAspectRatioFromCMFormatDescription, kCMFormatDescriptionKey_PixelAspectRatioHorizontalSpacing), AVVideoPixelAspectRatioHorizontalSpacingKey,
-										CFDictionaryGetValue(pixelAspectRatioFromCMFormatDescription, kCMFormatDescriptionKey_PixelAspectRatioVerticalSpacing), AVVideoPixelAspectRatioVerticalSpacingKey,
-										nil];
-				}
-				
-				if (cleanAperture || pixelAspectRatio)
-				{
-					NSMutableDictionary *mutableCompressionSettings = [NSMutableDictionary dictionary];
-					if (cleanAperture)
-						[mutableCompressionSettings setObject:cleanAperture forKey:AVVideoCleanApertureKey];
-					if (pixelAspectRatio)
-						[mutableCompressionSettings setObject:pixelAspectRatio forKey:AVVideoPixelAspectRatioKey];
-					compressionSettings = mutableCompressionSettings;
-				}
-			}
 			
             float bitRate = 512.f * 1024.f;
             NSInteger frameInterval = 30;
@@ -377,7 +326,7 @@
     
 	dispatch_async(dispatch_get_main_queue(), ^{
 		
-        if (self.delegate && [self.delegate respondsToSelector:@selector(videoCompressEngine:didFinishCompressALAsset:toURLPath:)]) {
+        if (success && self.delegate && [self.delegate respondsToSelector:@selector(videoCompressEngine:didFinishCompressALAsset:toURLPath:)]) {
             [self.delegate videoCompressEngine:self didFinishCompressALAsset:al_asset toURLPath:outputURL];
         }
         
