@@ -169,7 +169,7 @@
         [self.view addSubview:progressContainView];
     }
     {
-        progressLabel = [[UILabel alloc] initWithFrame:CGRectMake(200, 200, 140, 40)];
+        progressLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 200, 200, 40)];
         progressLabel.center = CGPointMake(160, ([UIScreen mainScreen].bounds.size.height)/2+40);
         progressLabel.text =@"Processing...";
         [progressLabel setTextAlignment :NSTextAlignmentCenter];

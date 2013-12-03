@@ -8,10 +8,8 @@
 
 #import "QZViewController.h"
 #import "QZAssetsPickerController.h"
-#import "QZLocalVideoCompressEngine.h"
-#import "QZVideoPreviewController.h"
 
-@interface QZViewController ()<UINavigationControllerDelegate, QZAssetsPickerControllerDelegate, QZLocalVideoCompressEngineDelegate>
+@interface QZViewController ()<UINavigationControllerDelegate, QZAssetsPickerControllerDelegate>
 @property (nonatomic, strong) NSMutableArray *assets;
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;
 @property (nonatomic, strong) UILabel * infoLabel;
@@ -63,47 +61,14 @@
     
     [self presentViewController:picker animated:YES completion:NULL];
 }
-- (void)assetsPickerController:(QZAssetsPickerController *)picker didFinishPickingAssets:(NSArray *)assets{
-    
-    
-}
 
+#pragma mark - asset picker delegate
 -(void)assetsPickerController:(QZAssetsPickerController *)picker didFinishPickingAssetUrl:(NSURL *)assetUrl{
     _infoLabel.text = [NSString stringWithFormat:@"Local NSURL:  %@",assetUrl];
 }
 
-- (NSArray *)indexPathOfNewlyAddedAssets:(NSArray *)assets{
-    
-    NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
-    
-    for (int i = (int)self.assets.count; i < self.assets.count + assets.count ; i++)
-        [indexPaths addObject:[NSIndexPath indexPathForRow:i inSection:0]];
-    
-    return indexPaths;
-}
 
--(void)assetsPickerController:(QZAssetsPickerController *)picker didFinishPickingVedioPath:(NSString *)tmppath thumbImage:(UIImage *)thumb{
-    NSLog(@"%@",tmppath);
-}
 
-#pragma mark - QZLocalVideoCompressEngineDelegate
--(void)videoCompressEngine:(QZLocalVideoCompressEngine *)compEngine didFinishCompressALAsset:(ALAsset *)asset toURLPath:(NSURL *)urlPath{
-    NSLog(@"%@",urlPath);
-}
-
--(void)videoCompressEngine:(QZLocalVideoCompressEngine *)compEngine compressProgress:(double)progress{
-    NSLog(@"%d/100",(int)(progress*100));
-}
-
-#pragma mark - tableview delegate
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    ALAsset *asset = [self.assets objectAtIndex:indexPath.row];
-    QZVideoPreviewController *videoPreviewController = [[QZVideoPreviewController alloc] init];
-    [videoPreviewController setAsset:asset];
-    [videoPreviewController setAssetURL:[asset valueForProperty:ALAssetPropertyAssetURL]];
-    //[self.navigationController pushViewController:videoPreviewController animated:YES];
-    [self presentViewController:videoPreviewController animated:YES completion:nil];
-}
 
 
 
